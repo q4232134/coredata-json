@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14E46" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="BaseModel" representedClassName="NetDemo.BaseModel" isAbstract="YES" syncable="YES">
+        <attribute name="conflictId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="flowname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isChanged" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="kpchangedate" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="OperationTicketStep" representedClassName="NetDemo.OperationTicketStep" parentEntity="BaseModel" syncable="YES">
+        <attribute name="code" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="description2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="finishtime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="isruned" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="optid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stepid" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="SafeItems" representedClassName="NetDemo.SafeItems" parentEntity="BaseModel" syncable="YES">
+        <attribute name="execontent" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="executer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isfinished" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="measuresid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="orderby" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="sfcontent" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sftype" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wktid" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName="NetDemo.User" parentEntity="BaseModel" syncable="YES">
+        <attribute name="createby" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="createdate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="deptnum" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="displayname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="employeenum" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isvalid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="loginid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mlnid" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="modifyby" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="modifydate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="orgid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ptlspecialty" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="remark" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userid" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="BaseModel" positionX="-90" positionY="126" width="128" height="105"/>
+        <element name="OperationTicketStep" positionX="-315" positionY="108" width="128" height="135"/>
+        <element name="SafeItems" positionX="-315" positionY="-72" width="128" height="165"/>
+        <element name="User" positionX="-315" positionY="258" width="128" height="300"/>
+    </elements>
+</model>
